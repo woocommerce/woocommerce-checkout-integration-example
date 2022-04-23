@@ -1,0 +1,49 @@
+# Copyright (C) 2022 WooCommerce
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Checkout Integration Example 1.0.0\n"
+"Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-04-23T12:40:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"language-team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Domain: woocommerce-checkout-integration-example\n"
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Checkout Integration Example"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://woocommerce.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "An example to help you integrate an existing plugin with the new, block-based checkout."
+msgstr ""
+
+#. Author of the plugin
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/api/class-wc-cie-store-api-integration.php:87
+msgid "Payment gateway visibility data."
+msgstr ""
+
+#: includes/api/class-wc-cie-store-api-integration.php:93
+msgid "Whether the payment method is hidden in the checkout block."
+msgstr ""
+
+#: includes/api/class-wc-cie-store-api-integration.php:129
+msgid "Invalid payment option."
+msgstr ""
+
+#: includes/blocks/class-wc-cie-blocks-integration.php:38
+#: includes/blocks/class-wc-cie-blocks-integration.php:45
+msgid "Ops!"
+msgstr ""
