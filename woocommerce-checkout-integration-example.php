@@ -41,7 +41,7 @@ class WC_CIE {
 	 *
 	 * @return string
 	 */
-	public function get_plugin_version() {
+	public static function get_plugin_version() {
 		return self::VERSION;
 	}
 
