@@ -66,7 +66,8 @@ class WC_CIE_Store_API_Integration {
 		$gateway_data = array();
 
 		foreach ( $gateways as $gateway ) {
-			$cart_data[ 'gateway_visibility' ][ $gateway->id ] = array(
+			$cart_data[ 'gateway_visibility' ][] = array(
+				'gateway'    => $gateway->id,
 				'is_visible' => isset( $visible_gateways[ $gateway->id ] )
 			);
 		}
@@ -89,6 +90,12 @@ class WC_CIE_Store_API_Integration {
 				'context'     => array( 'view', 'edit' ),
 				'readonly'    => true,
 				'items'       => array(
+					'gateway'   => array(
+						'description' => __( 'Gateway name.', 'woocommerce-checkout-integration-example' ),
+						'type'        => 'string',
+						'context'     => array( 'view', 'edit' ),
+						'readonly'    => true,
+					),
 					'is_visible'   => array(
 						'description' => __( 'Whether the payment method is hidden in the checkout block.', 'woocommerce-checkout-integration-example' ),
 						'type'        => 'integer',

@@ -28,8 +28,9 @@ const getPaymentMethodCallbacks = () => {
 
 			const visibilityData = args.cart.extensions[ 'checkout-integration-example' ].gateway_visibility;
 
-			if ( gatewayName in visibilityData ) {
-				const { is_visible: isVisible } = visibilityData[ gatewayName ];
+			const gatewayVisibilityData = visibilityData.find( ( data ) => gatewayName === data.gateway );
+			if ( gatewayVisibilityData !== undefined ) {
+				const { is_visible: isVisible } = gatewayVisibilityData;
 				return isVisible;
 			}
 
