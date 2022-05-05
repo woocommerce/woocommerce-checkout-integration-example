@@ -98,7 +98,7 @@ class WC_CIE_Store_API_Integration {
 					),
 					'is_visible'   => array(
 						'description' => __( 'Whether the payment method is hidden in the checkout block.', 'woocommerce-checkout-integration-example' ),
-						'type'        => 'integer',
+						'type'        => 'boolean',
 						'context'     => array( 'view', 'edit' ),
 						'readonly'    => true,
 					)
