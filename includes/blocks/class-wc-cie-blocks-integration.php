@@ -60,8 +60,8 @@ class WC_CIE_Blocks_Integration implements IntegrationInterface {
 	public function initialize() {
 
 		$suffix            = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-		$script_path       = '/assets/dist/frontend/blocks' . $suffix . '.js';
-		$script_asset_path = WC_CIE_ABSPATH . 'assets/dist/frontend/blocks.asset.php';
+		$script_path       = '/assets/js/frontend/blocks' . $suffix . '.js';
+		$script_asset_path = WC_CIE_ABSPATH . 'assets/js/frontend/blocks.asset.php';
 		$script_asset      = file_exists( $script_asset_path )
 			? require( $script_asset_path )
 			: array(
