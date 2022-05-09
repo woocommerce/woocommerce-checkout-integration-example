@@ -32,14 +32,6 @@ module.exports = {
         path: path.resolve( __dirname, 'assets/js' ),
         filename: '[name].js',
     },
-    optimization: {
-        ...defaultConfig.optimization,
-        splitChunks: {
-            cacheGroups: {
-                default: false
-            }
-        }
-    },
     plugins: [
         ...defaultConfig.plugins.filter(
             (plugin) =>
