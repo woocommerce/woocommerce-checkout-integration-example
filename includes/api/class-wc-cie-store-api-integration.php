@@ -128,10 +128,10 @@ class WC_CIE_Store_API_Integration {
 
 		$chosen_gateway   = $order->get_payment_method();
 		$visible_gateways = WC_CIE::get_payment_gateways( true );
-		$is_invalid       = isset( $visible_gateways[ $chosen_gateway ] );
+		$is_valid         = isset( $visible_gateways[ $chosen_gateway ] );
 
 		// Return error if necessary.
-		if ( $is_invalid ) {
+		if ( ! $is_valid ) {
 
 			$errors = new \WP_Error();
 			$code   = self::IDENTIFIER . '-error';
