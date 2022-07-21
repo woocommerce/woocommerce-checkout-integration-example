@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: WooCommerce Checkout Integration Example 1.
+* Plugin Name: WooCommerce Checkout Integration Example 1
 * Plugin URI: https://woocommerce.com/
 * Description: An example to help you integrate your WooCommerce plugin with the new, block-based checkout.
 * Version: 1.0.0
