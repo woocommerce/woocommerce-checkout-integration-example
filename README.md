@@ -1,10 +1,15 @@
 # WooCommerce Checkout Integration Example 1
 
+> [!NOTE]  
+> This repository shows an example of the steps and components required to integrate with the Cart and Checkout blocks.
+> 
+> While the code here still functions, the actual functionality it demonstrates is achievable in PHP ([See the linked guide](https://developer.woocommerce.com/2022/05/20/hiding-shipping-and-payment-options-in-the-cart-and-checkout-blocks/)). Disabling paid shipping methods when a free method is available is also possible through the WooCommerce Shipping settings.
+
 An example that shows you how to conditionally hide shipping and payment options in the [Cart and Checkout blocks](https://woocommerce.com/checkout-blocks/).
 
 The new Cart and Checkout blocks are part of the [WooCommerce Blocks](https://woocommerce.com/products/woocommerce-gutenberg-products-block/) plugin, and were built from the ground up to deliver a conversion-optimized checkout experience that is fully customizable in the WordPress Block Editor. 
 
-The code in this repository is explained [in this guide](#). Studying this example will help you get a better understanding of how to:
+The code in this repository is explained [in this guide](https://developer.woocommerce.com/2022/05/20/hiding-shipping-and-payment-options-in-the-cart-and-checkout-blocks/). Studying this example will help you get a better understanding of how to:
 
 - [Expose custom data](https://github.com/woocommerce/woocommerce-gutenberg-products-block/blob/trunk/docs/extensibility/extend-rest-api-add-data.md) in the responses of existing Store API routes.
 - Prepare your plugin to build modern JavaScript (ES6/React) code.
