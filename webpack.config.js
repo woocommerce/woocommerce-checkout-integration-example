@@ -11,13 +11,13 @@ const wcHandleMap = {
 };
 
 const requestToExternal = (request) => {
-    if (wcDepMap[request]) {
+    if (typeof request === 'string' && wcDepMap[request]) {
         return wcDepMap[request];
     }
 };
 
 const requestToHandle = (request) => {
-    if (wcHandleMap[request]) {
+    if (typeof request === 'string' && wcHandleMap[request]) {
         return wcHandleMap[request];
     }
 };
